@@ -19,7 +19,6 @@ int main (void){
             tmp2 = tmp%enderecos;
             for(y = 0; y < chaves; y++){
                 if(listao[tmp2][y]==0){
-                    printf("entrei %d %d %d\n", tmp2, y, tmp);
                     listao[tmp2][y] = tmp;
                     break;
                 }
@@ -29,14 +28,14 @@ int main (void){
             printf("%d -> ", x);
             for(y = 0; y < chaves; y++){
                 if(!listao[x][y]){
-                    printf(" \\");
+                    printf("\\\n");
                     break;
                 }
                 else
                     printf("%d -> ", listao[x][y]);
             }
-            printf("\n");
         }
+        printf("\n");
     }
     return 0;
 }
