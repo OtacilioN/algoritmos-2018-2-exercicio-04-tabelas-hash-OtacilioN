@@ -16,15 +16,16 @@ A saída deverá ser impressa conforme os exemplos fornecidos abaixo, onde a qua
 
 ## Exemplos
 
-``` ### Entrada
+### Entrada
+```
 2
 13 9
 44 45 49 70 27 73 92 97 95
 7 8
 35 12 2 17 19 51 88 86 
 ```
-
-```### Saida
+### Saida
+```
 1 -> 27 -> 92 -> \
 2 -> \
 3 -> \
