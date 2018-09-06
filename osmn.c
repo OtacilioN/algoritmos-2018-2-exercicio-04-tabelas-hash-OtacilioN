@@ -34,8 +34,11 @@ int main (void){
                 else
                     printf("%d -> ", listao[x][y]);
             }
+            if(y == chaves)
+                printf("\\\n");
         }
-        printf("\n");
+        if(testes >= 1)
+            printf("\n");
     }
     return 0;
 }
