@@ -47,5 +47,4 @@ A saída deverá ser impressa conforme os exemplos fornecidos abaixo, onde a qua
 4 -> 88 -> \
 5 -> 12 -> 19 -> \
 6 -> \
-
 ```
