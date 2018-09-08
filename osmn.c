@@ -6,38 +6,26 @@ int main (void){
     while(testes--){
         int enderecos, chaves, x, y;
         scanf("%d %d", &enderecos, &chaves);
-        int listao[enderecos][chaves];
+        int listao[enderecos][chaves], ultimaColisao[enderecos];
         for(x = 0; x < enderecos; x++){
-            for(y = 0; y < chaves; y++){
-                listao[x][y] = 0;
-            }
+            ultimaColisao[x] = 0;
         }
         
         for(x = 0; x < chaves; x++){
             int tmp, tmp2;
             scanf("%d", &tmp);
             tmp2 = tmp%enderecos;
-            for(y = 0; y < chaves; y++){
-                if(listao[tmp2][y]==0){
-                    listao[tmp2][y] = tmp;
-                    break;
-                }
-            }
+            listao[tmp2][ultimaColisao[tmp2]] = tmp;
+            ultimaColisao[tmp2]++;
         }
         for(x = 0; x < enderecos; x++){
             printf("%d -> ", x);
-            for(y = 0; y < chaves; y++){
-                if(!listao[x][y]){
-                    printf("\\\n");
-                    break;
-                }
-                else
-                    printf("%d -> ", listao[x][y]);
+            for(y = 0; y < ultimaColisao[x]; y++){
+                printf("%d -> ", listao[x][y]);
             }
-            if(y == chaves)
-                printf("\\\n");
+            printf("\\\n");
         }
-        if(testes >= 1)
+        if(testes)
             printf("\n");
     }
     return 0;
