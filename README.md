@@ -26,6 +26,7 @@ A saída deverá ser impressa conforme os exemplos fornecidos abaixo, onde a qua
 ```
 ### Saida
 ```
+0 -> \
 1 -> 27 -> 92 -> \
 2 -> \
 3 -> \
@@ -46,4 +47,5 @@ A saída deverá ser impressa conforme os exemplos fornecidos abaixo, onde a qua
 4 -> 88 -> \
 5 -> 12 -> 19 -> \
 6 -> \
+
 ```
